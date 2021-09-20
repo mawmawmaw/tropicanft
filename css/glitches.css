@@ -125,4 +125,9 @@ canvas#glitched-image {
   top: 0;
   z-index: -1;
   background: transparent;
+  animation: rotate-perspective 5s linear 0.2s infinite;
+}
+@keyframes rotate-perspective{
+  from { transform: translateX(0px) rotateY(0deg); }
+  to { transform: translateX(0px) rotateY(360deg); }
 }
