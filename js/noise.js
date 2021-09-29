@@ -71,4 +71,6 @@ const noise = () => {
         setup();
     })();
 };
-noise();
+window.addEventListener('DOMContentLoaded', (event) => {
+    noise();
+});

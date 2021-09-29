@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="description" content=""/>
 <meta name="keywords" content="" />
+
 <meta property="og:url" content="https://www.tropicanft.com/"/>
 <meta property="og:site_name" content="Tropican NFT"/>
 <meta property="og:description" content=""/>
@@ -18,7 +19,6 @@
 <meta name="twitter:image" content="https://www.tropicanft.com/assets/social.jpg"/>
 <meta name="twitter:image:alt" content="Tropican NFT | Home"/>
 <meta name="theme-color" content="#ed54a4"/>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.min.js"></script>
 <link rel="icon" href="/assets/favicon.png" />
 <link rel="apple-touch-icon" href="/assets/favicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,8 +48,21 @@
     <main role="main" class="main-content">
         <header class="main-header">
             <div class="container">
-                <section class="logo"><a href="/" title="inicio"><img src="/assets/logo.png" alt="Logo"/></a></section>
+                <section class="logo"><a href="/" title="inicio"><img loading="lazy" src="/assets/logo.png" alt="Logo"/></a></section>
                 <nav class="main-nav">
+                    <ul>
+                        <li><a href="/" class="active">Inicio</a></li>
+                        <li><a href="/colecciones/">Colecciones</a></li>
+                        <li><a href="/artistas/">Artistas</a></li>
+                        <li><a href="https://opensea.io/" target="_blank" rel="noreferrer nofollow">Artdrops</a></li>
+                        <li><a href="https://medium.com/@nftenespanol">Journal</a></li>
+                        <li><a href="/about/">About</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu"><img loading="lazy" src="./assets/menu.png" alt="Icono menu"/></button>
+                <nav class="mobile-nav">
+                    <button id="close-menu"><img loading="lazy" src="./assets/close.png" alt="Icono cerrar menu"/></button>
+                    <h1 class="underlined">Menu</h1>
                     <ul>
                         <li><a href="/" class="active">Inicio</a></li>
                         <li><a href="/colecciones/">Colecciones</a></li>
@@ -65,13 +78,13 @@
 
         <section class="main-content home">
             <div class="container">
-                <img id="loader" src="/assets/loading.gif"/>
+                <img loading="lazy" id="loader" src="/assets/loading.gif" alt="loading..."/>
             </div>
         </section>
 
-        <footer class="main-footer fixed">
+        <footer class="main-footer home fixed">
             <div class="container">
-                <section class="footer-logo"><a href="/" title="inicio"><img src="/assets/logo-footer.png" alt="Logo"/></a><br/><p>All Rights Reserved<br/>&copy;2021</p></section>
+                <section class="footer-logo"><a href="/" title="inicio"><img loading="lazy" src="/assets/logo-footer.png" alt="Logo"/></a><br/><p>All Rights Reserved<br/>&copy;2021</p></section>
                 <nav class="footer-nav">
                     <ul>
                         <li><a href="https://medium.com/@nftenespanol">Journal</a></li>
@@ -81,15 +94,17 @@
                 </nav>
                 <section class="social">
                     <ul>
-                        <li><a href=""><img src="/assets/icon_twitter.png" alt="Twitter"></a></li>
-                        <li><a href=""><img src="/assets/icon_instagram.png" alt="Instagram"></a></li>
-                        <li><a href=""><img src="/assets/icon_discord.png" alt="Discord"></a></li>
+                        <li><a href=""><img loading="lazy" src="/assets/icon_twitter.png" alt="Twitter"></a></li>
+                        <li><a href=""><img loading="lazy" src="/assets/icon_instagram.png" alt="Instagram"></a></li>
+                        <li><a href=""><img loading="lazy" src="/assets/icon_discord.png" alt="Discord"></a></li>
                     </ul>
                 </section>
             </div>
         </footer>
     </main>
-    <script src="/js/noise.js"></script>
-    <script src="/js/mainImageGlitch.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.min.js"></script>
+    <script defer src="/js/main.js"></script>
+    <script defer src="/js/noise.js"></script>
+    <script defer src="/js/mainImageGlitch.js"></script>
 </body>
 </html>
